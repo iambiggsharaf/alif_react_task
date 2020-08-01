@@ -7,16 +7,17 @@ class Hall extends Component {
     this.state = {
       time: new Date().getSeconds(),
       colorLive: this.changeBackgroundColor(),
-      
     };
-    
   }
 
   render() {
     var styles = {
-        "backgroundColor": this.state.colorLive,
-      }
-    return <h2 style={styles}>{this.state.time}</h2>;
+      backgroundColor: this.state.colorLive,
+      height: 30,
+      width: 350,
+      margin: 10,
+    };
+    return <h2 style={styles}></h2>;
   }
 
   changeBackgroundColor() {
